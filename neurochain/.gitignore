@@ -1,4 +1,18 @@
-node_modules
+.venv/
+MNIST/
+__pycache__/
+*.pyc
+*.pth
+*.onnx
+models/*.onnx
+models/*.pth
+.vscode/
+env/
+/.idea/
+*.egg-info/
+dist/
+build/
+pip-wheel-metadata/node_modules
 .env
 
 # Hardhat files
