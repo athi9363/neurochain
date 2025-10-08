@@ -1,0 +1,22 @@
+{
+  "name": "neurochain",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000N\u0000e\u0000u\u0000r\u0000o\u0000C\u0000h\u0000a\u0000i\u0000n\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+  "test": "hardhat test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^2.1.0",
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "hardhat": "^2.26.3"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.9.6",
+    "ethers": "^6.15.0"
+  }
+}
