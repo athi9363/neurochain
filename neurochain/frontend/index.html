@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NeuroChain Demo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>NeuroChain — Demo</h1>
+
+      <section id="wallet">
+        <button id="connect">Connect Wallet</button>
+        <div id="account"></div>
+      </section>
+
+      <section id="contract">
+        <label>BrainNFT contract address:</label>
+        <input id="contractAddress" placeholder="0x..." />
+        <label>Token ID:</label>
+        <input id="tokenId" value="0" />
+        <button id="loadToken">Load token</button>
+        <div id="tokenUri"></div>
+      </section>
+
+      <section id="model">
+        <h2>ONNX inference (in-browser)</h2>
+        <p>Model will be loaded from tokenURI if it's an http(s) URL or from <code>../models/tiny_mnist.onnx</code> otherwise.</p>
+        <button id="loadModel">Load ONNX Model</button>
+        <div id="modelStatus"></div>
+        <button id="runInference">Run Demo Inference</button>
+        <pre id="inferenceResult"></pre>
+      </section>
+
+      <section id="usage">
+        <h2>On-chain Usage</h2>
+        <button id="recordUsage">Record Usage (send tx)</button>
+        <div id="txStatus"></div>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/ethers@6.15.0/dist/ethers.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/onnxruntime-web/dist/ort.min.js"></script>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
